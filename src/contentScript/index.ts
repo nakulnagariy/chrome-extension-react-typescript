@@ -5,7 +5,7 @@
 printAllPageLinks();
 
 // This needs to be an export due to typescript implementation limitation of needing '--isolatedModules' tsconfig
-export function printAllPageLinks() {
+export function printAllPageLinks(): void {
   const allLinks = Array.from(document.querySelectorAll('a')).map(
     link => link.href
   );
